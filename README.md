@@ -51,7 +51,7 @@ $$K_H(x)=\frac{1}{|\det H|}K\!\left(H^{-1}x\right).$$
 Here $K:\mathbb{R}^d\to\mathbb{R}$ must itself be a $d$-dimensional
 kernel. A common choice is a product kernel built from a univariate
 kernel $K$, with a diagonal bandwidth matrix
-$H=\operatorname{diag}(h_1,\dots,h_d)$:
+$H=\text{diag}(h_1,\dots,h_d)$:
 
 $$K_H(x)=\prod_{j=1}^{d}\frac{1}{h_j}K\!\left(\frac{x_j}{h_j}\right).$$
 
@@ -246,7 +246,7 @@ ggplot()+geom_line(aes(x=pk1$x, y=mix1, color="true"))+
 ## Example 2: Binary responses
 
 We now do an example with binary data, $Y_i\sim\text{Bernoulli}(p_i)$
-with $p_i=\operatorname{expit}(5.01\,x_i)$.
+with $p_i=\text{expit}(5.01\,x_i)$.
 
 ``` r
 n<-100
